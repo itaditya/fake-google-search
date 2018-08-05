@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.google-search-section {
+  font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.google-logo-image {
+  width: 272px;
+  margin-bottom: 30px;
+}
+
+.google-search-field {
+  position: relative;
+  height: 44px;
+}
+
+.google-search-input {
+  width: 500px;
+  height: 100%;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 50px;
+  border: none;
+  outline: 0 !important;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.google-search-input:focus {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.google-search-voice-icon {
+  height: 100%;
+  position: absolute;
+  width: 40px;
+  background-image: url("https://image.ibb.co/c5qq0e/google_search_voice_icon.png");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+.google-search-autocomplete {
+  background-color: #fff;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  position: absolute;
+  top: calc(100% - 1px);
+  width: 100%;
+}
+
+.google-search-autocomplete-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.google-search-autocomplete-item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.google-search-autocomplete-item:hover {
+  background-color: #eeeeee;
+}
+
+.autocomplete-suggestion {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  text-transform: lowercase;
+  outline: 0 !important;
+}
+
+.autocomplete-suggestion-remove {
+  text-decoration: none;
+  color: #36c;
+  font-size: 13px;
+}
+
+.google-search-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.google-button {
+  font-size: 13px;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #757575;
+  font-weight: 700;
+  margin: 0 4px;
+}
+
+.google-button:hover {
+  background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+.google-button:focus {
+  border: 1px solid #4d90fe;
+}

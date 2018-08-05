@@ -1,0 +1,4 @@
+/*
+Enter the search text in the input field
+Click on each suggestion and write anything you like
+*/
